@@ -2,8 +2,17 @@
 Roger Skyline project 42
 
 
+iptables :
+https://geekeries.org/2017/12/configuration-avancee-du-firewall-iptables/?cn-reloaded=1&cn-reloaded=1&cn-reloaded=1
+
+ufw :
+https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-debian-9/
+
 /etc/rc.local
 contient scripts lu au boot
+
+affichage état des ports :
+ss -tulwn
 
 Parametrage de Virtualbox pour la VM :
 Gestionnaire réseau creation d'un réseau dissocie du serveur DHCP de la machine.
