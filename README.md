@@ -11,6 +11,10 @@ https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-debian-9/
 /etc/rc.local
 contient scripts lu au boot
 
+/etc/iptables/rules.v4
+contient parametre iptables firewall
+iptables-restore < /etc/iptables/rules.v4 pour svg
+
 affichage état des ports :
 ss -tulwn
 
@@ -69,6 +73,9 @@ Vous devez mettre en place des règles de pare-feu (firewall) sur le serveur ave
 uniquement les services utilisés accessible en dehors de la VM.
 */
 
+parametrage avancé du firewall:
+-> /etc/sysctl.conf
+
 parametrage de /etc/interfaces/if-pre-up.d/iptables
 instructions shell ->
 sudo sudo iptables -F
@@ -89,3 +96,9 @@ sudo iptables -I INPUT -i lo -j ACCEPT
 sudo iptables -A INPUT -j LOG
 sudo iptables -A FORWARD -j LOG
 sudo iptables -I INPUT -p tcp --dport 80 -m connlimit --connlimit-above 10 --connlimit-mask 20 -j DROP
+
+script mail cron :
+-> /home/ltimsit/cron_check.sh
+
+sript update checker
+-> /home/ltimsit/update_packages.sh
