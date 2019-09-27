@@ -20,6 +20,8 @@ iptables-restore < /etc/iptables/rules.v4 pour svg
 
 iptables-save -> /etc/init.d/netfilter-persistent
 
+https://github.com/DMaxence/Roger-skyline-1
+
 affichage état des ports :
 ss -tulwn
 
