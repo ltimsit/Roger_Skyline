@@ -18,6 +18,8 @@ contient scripts lu au boot
 contient parametre iptables firewall
 iptables-restore < /etc/iptables/rules.v4 pour svg
 
+iptables-save -> /etc/init.d/netfilter-persistent
+
 affichage état des ports :
 ss -tulwn
 
