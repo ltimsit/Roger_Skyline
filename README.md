@@ -8,6 +8,9 @@ https://geekeries.org/2017/12/configuration-avancee-du-firewall-iptables/?cn-rel
 ufw :
 https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-debian-9/
 
+param firewall ssh
+https://www.alsacreations.com/tuto/lire/622-Securite-firewall-iptables.html
+
 /etc/rc.local
 contient scripts lu au boot
 
